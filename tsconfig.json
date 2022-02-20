@@ -1,6 +1,21 @@
 {
   "extends": "expo/tsconfig.base",
+
   "compilerOptions": {
-    "strict": true
+    "paths": {
+      "@utils": ["./src/utils"],
+      "@utils/*": ["./src/utils/*"]
+    },
+    "baseUrl": ".",
+    "strict": true,
+    "target": "ES2017",
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
   }
 }
